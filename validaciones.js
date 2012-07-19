@@ -9,21 +9,21 @@ var email_fail = "Este campo solo recibe EMAIL validos"
 
 function replace_acentos_upper(texto)
 {
-    texto=texto.replace(/(À|Á|Â|Ã|Ä)/gi,'A');
-    texto=texto.replace(/(È|É|Ê|Ë)/gi,'E');
-    texto=texto.replace(/(Ì|Í|Î|Ï)/gi,'I');
-    texto=texto.replace(/(Ò|Ó|Ô|Ö)/gi,'O');
-    texto=texto.replace(/(Ù|Ú|Û|Ü)/gi,'U');
+    texto=texto.replace(/(À|Á|Â|Ã)/gi,'A');
+    texto=texto.replace(/(È|É|Ê)/gi,'E');
+    texto=texto.replace(/(Ì|Í|Î)/gi,'I');
+    texto=texto.replace(/(Ò|Ó|Ô)/gi,'O');
+    texto=texto.replace(/(Ù|Ú|Û)/gi,'U');
     return texto;
 }
 
 function replace_acentos(texto)
 {
-    texto=texto.replace(/(à|á|â|ã|ä)/gi,'a');
-    texto=texto.replace(/(è|é|ê|ë)/gi,'e');
-    texto=texto.replace(/(ì|í|î|ï)/gi,'i');
-    texto=texto.replace(/(ò|ó|ô|ö)/gi,'o');
-    texto=texto.replace(/(ù|ú|û|ü)/gi,'u');
+    texto=texto.replace(/(à|á|â|ã)/gi,'a');
+    texto=texto.replace(/(è|é|ê)/gi,'e');
+    texto=texto.replace(/(ì|í|î)/gi,'i');
+    texto=texto.replace(/(ò|ó|ô)/gi,'o');
+    texto=texto.replace(/(ù|ú|û)/gi,'u');
     return texto;
 }
 
