@@ -9,7 +9,7 @@ var email_fail = "Este campo solo recibe EMAIL validos"
 
 function replace_acentos_upper(texto)
 {
-    texto=texto.replace(/(À|Á|Â|Ã|Ä|Å|Æ)/gi,'A');
+    texto=texto.replace(/(À|Á|Â|Ã|Ä)/gi,'A');
     texto=texto.replace(/(È|É|Ê|Ë)/gi,'E');
     texto=texto.replace(/(Ì|Í|Î|Ï)/gi,'I');
     texto=texto.replace(/(Ò|Ó|Ô|Ö)/gi,'O');
@@ -19,7 +19,7 @@ function replace_acentos_upper(texto)
 
 function replace_acentos(texto)
 {
-    texto=texto.replace(/(à|á|â|ã|ä|å|æ)/gi,'a');
+    texto=texto.replace(/(à|á|â|ã|ä)/gi,'a');
     texto=texto.replace(/(è|é|ê|ë)/gi,'e');
     texto=texto.replace(/(ì|í|î|ï)/gi,'i');
     texto=texto.replace(/(ò|ó|ô|ö)/gi,'o');
@@ -151,4 +151,4 @@ $('#form_script').submit(function(e) {
     if (count > 0){
         e.preventDefault();
     }
-});​
+})
